@@ -97,7 +97,8 @@ a:visited:hover{
 .nav__li{
 	display:inline-block;
 	margin: 0 2em;
-	background-color: #b62f09;
+	background-color: #592a5e; /* Color de fondo del contenedor */
+	;
 	font-family: 'Rubik Moonrocks', cursive;
 	font-weight: 100;
 	border-radius: 0 0 4px 4px;
@@ -227,7 +228,7 @@ a:visited:hover{
 /*FOOTER*/
 
 footer{
-	background: #b62f09;
+	background: #592a5e; /* Color de fondo del contenedor */
 	padding: 15px 2px 10px 2px;
 	font-family: sans-serif;
 	font-size: .8em;
@@ -260,13 +261,14 @@ footer{
 
 .item-1a {
     display: flex; 
-    flex: 0 0 5%; /* Ocupa el 50% del espacio disponible */
+    flex: 0 0 44%; /* Ocupa el 50% del espacio disponible */
     min-width: 200px; /* Establece un ancho mínimo */
     height: 8em; 
     background-repeat: no-repeat; 
     object-fit: contain; /* Mantiene la proporción de la imagen dentro del contenedor */
     user-select: none; /* Previene la selección de texto dentro del contenedor */
     justify-content: flex-end; /* Alinea la imagen a la derecha */
+	padding: 1em;
 }
 
 .item-1b {
@@ -278,6 +280,7 @@ footer{
     color: #ffffff;
     flex-direction: column; /* Asegura que el contenido se apile verticalmente */
     justify-content: flex-start; /* Alinea el contenido al inicio del contenedor */
+	padding: 1em;
 }
 
 
