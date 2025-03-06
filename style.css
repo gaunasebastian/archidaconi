@@ -173,19 +173,6 @@ a:visited:hover{
 	transition: all .2s;
 }
 
-/*IMG*/
-
-.img-1{ 
-		background-color: #000000;
-		background-image: url("accessories/img1.png");
-		background-position-x: center;
-		background-repeat: no-repeat;
-		height: 12.5em;
-		user-select: none;
-		display:flex;
-		object-fit:contain;
-	    justify-content: center;
-}
 
 /*POST-IMG*/
 .c-table{ 
@@ -261,15 +248,43 @@ footer{
 }
 
 
-/*FLEX*/
+/*2025-03-05 FLEX*/
 
-.flex-container{
-	background-color: #000000;
-	display: flex;
-	justify-content: center;
-	flex-flow: row wrap;
-	align-items: baseline;
+.flex-1 {
+    display: flex; /* Establece el contenedor como un flexbox */
+    flex-flow: row wrap; /* Permite que los elementos se distribuyan en filas y se ajusten al contenedor */
+    justify-content: flex-start; /* Alinea los elementos al inicio del contenedor */
+    align-items: center; /* Alinea los elementos según su línea base */
+    background-color: #592a5e; /* Color de fondo del contenedor */
 }
+
+.item-1a {
+    display: flex; 
+    flex: 0 0 5%; /* Ocupa el 50% del espacio disponible */
+    min-width: 200px; /* Establece un ancho mínimo */
+    height: 8em; 
+    background-repeat: no-repeat; 
+    object-fit: contain; /* Mantiene la proporción de la imagen dentro del contenedor */
+    user-select: none; /* Previene la selección de texto dentro del contenedor */
+    justify-content: flex-end; /* Alinea la imagen a la derecha */
+}
+
+.item-1b {
+    display: flex;
+    flex: 1; /* Permite que el elemento crezca y ocupe el espacio restante */
+    min-width: 200px; /* Establece un ancho mínimo */
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #ffffff;
+    flex-direction: column; /* Asegura que el contenido se apile verticalmente */
+    justify-content: flex-start; /* Alinea el contenido al inicio del contenedor */
+}
+
+
+
+
+
+
 
 .flex-container-3{
 	background-color: #000000;
@@ -311,6 +326,8 @@ footer{
 	line-height: 1.5;
 	color: #ffffff;
 }
+
+
 
 .flex-item-3{
 	flex-basis: max-content;
