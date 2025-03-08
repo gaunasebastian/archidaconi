@@ -44,8 +44,9 @@ main {
  */
 
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+  font-size: 1.5em; /* Larger font size for the name */
+  margin: 0; /* Remove default margin */
+  padding: 0 0 0.2em 0;
 }
 
 /* Grouping content
