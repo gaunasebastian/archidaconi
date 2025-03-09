@@ -18,26 +18,24 @@ header{
 	background-color: #741f1f;
 }
 
-h2{
+h3{
 	font-family: 'tip';
     letter-spacing: .2em;
 	color: #ffd91f;
 	padding: 0 0 5% 0;
 }
 
-h3{
+h2{
 	display:block;
-	padding: 30px 10px 0 10px;
+	padding: 1em 0; 
 	color: #ffd91f;
 	font-family: 'tip';
-	letter-spacing: .2em;
+	letter-spacing: .2em 0;
 	font-size: 2.2em;
 	line-height: 1.5;
-	justify-content: center;
-	text-align: center;
+	justify-content: left;
+	text-align: left;
 }
-
-
 
 .center-audio{
 	display: flex;
@@ -252,7 +250,7 @@ footer{
 
 /*2025-03-08*/
 
-.text-content {
+.text-content-1 {
     text-align: left; /* Center text within the div */
     margin-left: 1em; /* Space between image and text */
 	font-family: 'Trebuchet MS';         /* Fuente utilizada */
@@ -262,8 +260,6 @@ footer{
 .flex-1 {
     display: flex; /* Establece el contenedor como un flexbox */
     flex-flow: row wrap; /* Permite que los elementos se distribuyan en filas y se ajusten al contenedor */
-    justify-content: flex-start; /* Alinea los elementos al inicio del contenedor */
-    align-items: center; /* Alinea los elementos según su línea base */
     background-color: #592a5e; /* Color de fondo del contenedor */
 }
 
@@ -284,6 +280,27 @@ footer{
 	height: 8em;
 }
 
+
+.flex-2{
+	display: flex;
+	background-color: #000000;
+	align-items: center; /* Alineación vertical */
+    justify-content: center; /* Alineación horizontal */
+	padding: 2em 0;
+}
+
+.text-content-2{
+	flex-shrink: 0;
+	flex-basis: 100%;
+	font-family: sans-serif;
+	font-size: 1em;
+	text-align: left;
+	line-height: 1.5;
+	color: #ffffff;
+	min-width: 200px;           /* Ancho mínimo */
+    max-width: 400px;           /* Ancho máximo para limitar el estiramiento */
+    width: 100%;                /* Permite que el ancho sea flexible */
+}
 
 
 /*----------------------*/
@@ -311,24 +328,10 @@ footer{
 	border: 2px solid #ffd91f;
 }
 
-.flex-container-2{
-	background-color: #000000;
-	display: flex;
-	flex-flow: row wrap;
-}
 
 
-.flex-item-text{
-	flex-flow: column;
-	flex-shrink: 0;
-	flex-basis: 100%;
-	padding: 2% 35%;
-	font-family: sans-serif;
-	font-size: 1em;
-	text-align: justify;
-	line-height: 1.5;
-	color: #ffffff;
-}
+
+
 
 
 
