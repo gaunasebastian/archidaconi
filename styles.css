@@ -1,0 +1,447 @@
+/*GENERAL SETTINGS*/
+
+@font-face {
+	font-family: "tip";
+	src: url("accessories/tip.otf");
+  }
+
+*{
+	list-style: none;
+}
+
+*::selection{
+	background-color: #741f1f;
+	color: #ffd91f;
+}
+
+header{
+	background-color: #741f1f;
+}
+
+h3{
+	font-family: 'tip';
+    letter-spacing: .2em;
+	color: #ffd91f;
+	padding: 0 0 5% 0;
+}
+
+h2{
+	display:block;
+	padding: 1em 0; 
+	color: #ffd91f;
+	font-family: 'tip';
+	letter-spacing: .2em 0;
+	font-size: 2.2em;
+	line-height: 1.5;
+	justify-content: left;
+	text-align: left;
+}
+
+.center-audio{
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+	height: 80px;
+	width: 18em;
+	background-color: #000000;
+	padding: 0 0 15px 0;
+}
+
+/*GENERAL LINKS SETTINGS*/
+
+a:link{
+	color: #ffffff;
+	text-decoration: none;
+	cursor:url('accessories/rock.cur'), auto;
+}
+
+a:hover{
+	color: #ffd91f;
+	cursor:url('accessories/rock.cur'), auto;
+	transition: .3s ease all;
+}
+
+a:visited{
+	color: #ffffff;
+	text-decoration: none;
+	cursor:url('accessories/rock.cur'), auto;
+}
+
+a:visited:hover{
+	color: #ffd91f;
+	cursor:url('accessories/rock.cur'), auto;
+	transition: .3s ease all;
+}
+
+/*NAV*/
+
+.nav__ul{
+	background-color: #000;
+	display:flex;
+	object-fit:contain;
+	justify-content: center;
+	padding: 0 0 2em 0;
+
+	border-width: 0px 0px 50px 0px;
+	border-color: #000000;
+	border-style: solid;
+ }
+
+ .nav__ul a:hover{
+	color: #ffd91f;
+	cursor:url('accessories/rock.cur'), auto;
+	transition: .3s ease all;
+}
+
+
+.nav__li{
+	display:inline-block;
+	margin: 0 2em;
+	background-color: #592a5e; /* Color de fondo del contenedor */
+	;
+	font-family: 'Rubik Moonrocks', cursive;
+	font-weight: 100;
+	border-radius: 0 0 4px 4px;
+	padding: 8px 12px 10px 12px;
+}
+
+.nav__ul-responsive{
+	display:none;
+	background-color: #b62f09;
+	text-align: left;
+	padding: 3% 1% 1% 1%;
+
+	border-width: 0px 0px 50px 0px;
+	border-color: #000000;
+	border-style: solid;
+}
+
+.nav__ul-responsive a:hover{
+	color: #ffd91f;
+	cursor:url('accessories/rock.cur'), auto;
+	transition: all .2s;
+}
+
+
+.nav__li-responsive{
+	background-color: #b62f09;
+	display:flex;
+	text-align: left;
+	font-family: 'Rubik Moonrocks', cursive;
+	justify-content: center;
+	letter-spacing: .02em;
+	padding:.5em 1em;
+}
+
+@media only screen and (max-width: 800px){
+	.nav__ul{
+		display:none;
+	}
+	.nav__ul-responsive{ 
+		display:flex;
+    	justify-content: center;} 
+}
+
+/*LATERAL*/
+
+.lateral{
+	display: flex;
+    position: fixed;
+	align-items: stretch;
+	line-height: 25px;
+	flex-basis: 50%;
+	flex-shrink: 0;
+	flex-direction: column;
+	border-radius: 0 0 2% 2%;
+    background: rgb(40, 28, 151);
+	right: 3.5%;
+    top:0;
+    user-select: none;
+	padding: 12px;
+}
+
+.lateral a{
+	font-family: 'tip';
+	font-size: 14px;
+	text-align: center;
+    letter-spacing: .1em;
+	padding: 3%;
+}
+
+.lateral a:hover{
+	color: #ffd91f;
+	cursor:url('accessories/rock.cur'), auto;
+	transition: all .2s;
+}
+
+
+/*POST-IMG*/
+.c-table{ 
+		background-color: #000000;
+		display: grid;
+		grid-template-columns: repeat(7, 11.1%);
+		grid-template-areas:
+		"a b c d e f g";
+		font-family: 'tip';
+		font-size: 20px;
+		letter-spacing: .15em;
+		line-height: 1.5;	
+		text-align: center;
+		align-self: center;
+		justify-self: center;
+		justify-content: space-around;
+		padding: 40px 0 10px 0;
+}
+
+.table__row_1{
+	grid-area: c;
+
+}
+
+.table__row_2{
+	grid-area: e;
+}
+
+/*SPOTIFY-WEB-PLAYER*/
+
+.iframe-container{
+	display: flex;
+	margin: 0 auto;
+    user-select: none;
+}
+
+/*LETRAS*/
+
+.c-article__section-2{
+	background-color: #000000;
+	list-style: none;
+	display: block;
+	text-align: left;
+	font-family: 'tip';
+	letter-spacing: .2em;
+	font-size: 1.3em;
+	color: #ffffff;
+	line-height: 1.5;
+	text-align:center;
+}
+
+/*FOOTER*/
+
+footer{
+	background: #592a5e; /* Color de fondo del contenedor */
+	padding: 15px 2px 10px 2px;
+	font-family: sans-serif;
+	font-size: .8em;
+	text-align:center;
+	color: #D8d6d4;
+}
+
+.c-footer--1{
+	display: inline-block;
+	padding: 0 2px 10px 2px;
+	letter-spacing: .02em;
+}
+
+.c-footer--2{
+	display: inline-block;
+	padding: 15px;
+	font-size: 1em;
+}
+
+/*2025-03-08*/
+
+.text-content-1 {
+    text-align: left; /* Center text within the div */
+    margin-left: 1em; /* Space between image and text */
+	font-family: 'Trebuchet MS';         /* Fuente utilizada */
+    color: #ffffff;             /* Color del texto */
+}
+
+.flex-1 {
+    display: flex; /* Establece el contenedor como un flexbox */
+    flex-flow: row wrap; /* Permite que los elementos se distribuyan en filas y se ajusten al contenedor */
+    background-color: #592a5e; /* Color de fondo del contenedor */
+}
+
+.item-1a {
+    display: flex;               /* Establece el contenedor como flex */
+    flex: 100%;                 /* Ocupa el 100% del espacio disponible */
+    min-width: 200px;           /* Establece un ancho mínimo */
+    
+    justify-content: center;     /* Centra el contenido horizontalmente */
+    align-items: center;        /* Centra el contenido verticalmente */
+    
+    padding: 1em;               /* Añade espacio interno */
+}
+
+.img-1a{
+	user-select: none; /* Previene la selección de texto dentro del contenedor */
+	background-repeat: no-repeat; 
+	height: 8em;
+}
+
+
+.flex-2{
+	display: flex;
+	background-color: #000000;
+	align-items: center; /* Alineación vertical */
+    justify-content: center; /* Alineación horizontal */
+	padding: 2em 0;
+}
+
+.text-content-2{
+	flex-shrink: 0;
+	flex-basis: 100%;
+	font-family: sans-serif;
+	font-size: 1em;
+	text-align: left;
+	line-height: 1.5;
+	color: #ffffff;
+	min-width: 200px;           /* Ancho mínimo */
+    max-width: 400px;           /* Ancho máximo para limitar el estiramiento */
+    width: 100%;                /* Permite que el ancho sea flexible */
+}
+
+
+/*----------------------*/
+
+
+.flex-container-3{
+	background-color: #000000;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	align-items: center;
+}
+
+.flex-item{
+	flex-basis: max-content;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #ffffff;
+	background-color: #1c0504;
+	text-align: left;
+	padding: 45px;
+	margin:  2%;
+	border-radius: 35px 0px 35px 0px;
+	-moz-border-radius: 35px 0px 35px 0px;
+	-webkit-border-radius: 35px 0px 35px 0px;
+	border: 2px solid #ffd91f;
+}
+
+
+
+
+
+
+
+
+.flex-item-3{
+	flex-basis: max-content;
+	flex-flow: column;
+	flex-shrink: 0;
+	font-family: sans-serif;
+	font-size: 1em;
+	line-height: 1.5;
+	padding: 5%;
+	color: #ffffff;
+	list-style: none;
+	
+}
+
+.flex-item-4{
+	flex-flow: column;
+	flex-shrink: 0;
+	flex-basis: 100%;
+	padding: 2% 18%;
+	font-family: sans-serif;
+	font-size: 1em;
+	text-align: left;
+	line-height: 1.5;
+	color: #ffffff;
+}
+
+.aviso-cookies {
+	display: none;
+	position: fixed;
+	color:#fff;
+	background-color: #b62f09 ;
+	padding: 20px;
+	width: calc(100% - 40px);
+	max-width: 300px;
+	line-height: 150%;
+	border-radius: 10px;
+	bottom: 20px;
+	left: 20px;
+	z-index: 100;
+	padding-top: 60px;
+	box-shadow: 0 2px 20px 10px rgba(222,222,222,.25);
+	font-family: sans-serif;
+	text-align: center;
+}
+
+.aviso-cookies.activo{
+	display: block;
+}
+
+.aviso-cookies .galleta{
+	max-width: 250px;
+	position: absolute;
+	top: -60px;
+	left: calc(50% - 50px);
+}
+
+.aviso-cookies .titulo{
+	color:#fff;
+}
+.aviso-cookies .parrafo{
+	margin-bottom: 23px; 
+}
+
+.aviso-cookies .boton {
+	color:#c9975a;
+	width: 100%;
+	background-color: #6c4c2c;
+	border: 5px outset white;
+	font-family: sans-serif;
+	text-align: center;
+	padding: 15px 20px;
+	font-weight: 700;
+	cursor: pointer;
+	transition: .3s ease all;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	font-size: 14px;
+
+}
+
+.aviso-cookies .boton:hover {
+	background-color:#000000;
+	color:#fff;
+	cursor:url('accessories/rock.cur'), auto;
+}
+
+.aviso-cookies .enlace {
+	color: #ffd91f;
+	font-size: 12px;
+	cursor:url('accessories/rock.cur'), auto;
+}
+
+.aviso-cookies .enlace:hover {
+	text-decoration: underline;
+}
+
+.fondo-aviso-cookies{
+	display:none;
+	background-color: rgba(0,0,0, .9);
+	position: fixed;
+	z-index: 99;
+	width: 100vw;
+	height: 100vh;
+	top:0;
+	left:0;
+
+}
+
+.fondo-aviso-cookies.activo{
+	display:block;
+}
