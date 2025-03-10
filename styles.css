@@ -21,7 +21,6 @@ h3 {
 
 h2 {
   display: block;
-  padding: 1em 0;
   color: #bfde11;
   font-family: 'tip';
   letter-spacing: .2em 0;
@@ -144,6 +143,9 @@ a:visited:hover {
   cursor: url("accessories/rock.cur"), auto;
   transition: all .2s; }
 
+section {
+  padding: 1em 0; }
+
 /*POST-IMG*/
 .c-table {
   background-color: #000;
@@ -166,10 +168,9 @@ a:visited:hover {
 .table__row_2 {
   grid-area: e; }
 
-/*SPOTIFY-WEB-PLAYER*/
+/*IFRAME*/
 .iframe-container {
   display: flex;
-  margin: 0 auto;
   user-select: none; }
 
 /*LETRAS*/
