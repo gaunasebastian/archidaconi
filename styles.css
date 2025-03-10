@@ -220,10 +220,9 @@ footer {
 .flex-1 {
   display: flex;
   /* Establece el contenedor como un flexbox */
-  flex-flow: row wrap;
-  /* Permite que los elementos se distribuyan en filas y se ajusten al contenedor */
   background-color: #191970;
-  /* Color de fondo del contenedor */ }
+  /* Color de fondo del contenedor */
+  height: 8em; }
 
 .item-1a {
   display: flex;
@@ -232,12 +231,12 @@ footer {
   /* Ocupa el 100% del espacio disponible */
   min-width: 200px;
   /* Establece un ancho mínimo */
+  max-width: 100%;
+  /* Asegura que no exceda el ancho del contenedor padre */
   justify-content: center;
   /* Centra el contenido horizontalmente */
   align-items: center;
-  /* Centra el contenido verticalmente */
-  padding: 1em;
-  /* Añade espacio interno */ }
+  /* Centra el contenido verticalmente */ }
 
 .img-1a {
   user-select: none;
